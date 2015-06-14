@@ -1,0 +1,130 @@
+ inv-nodes ? Age ge40 yes
+ inv-nodes ? Age lt40 no
+ inv-nodes ? Age premeno yes
+ inv-nodes no tumor-size 12-14 yes
+ inv-nodes no tumor-size 15-17 no
+ inv-nodes no tumor-size 9-11 yes
+ inv-nodes yes tumor-size 12-14 yes
+ inv-nodes yes tumor-size 24-26 yes
+ inv-nodes no tumor-size 0-2 Menopause 0-4 no
+ inv-nodes no tumor-size 0-2 Menopause 35-39 no
+ inv-nodes no tumor-size 0-2 Menopause 45-49 yes
+ inv-nodes no tumor-size 3-5 Menopause 10-14 no
+ inv-nodes no tumor-size 3-5 Menopause 40-44 yes
+ inv-nodes no tumor-size 6-8 NO_NAME left_low yes
+ inv-nodes no tumor-size 6-8 NO_NAME left_up no
+ inv-nodes yes tumor-size 0-2 Menopause 20-24 no
+ inv-nodes yes tumor-size 0-2 Menopause 25-29 no
+ inv-nodes yes tumor-size 0-2 Menopause 35-39 yes
+ inv-nodes yes tumor-size 0-2 Menopause 50-54 yes
+ inv-nodes yes tumor-size 15-17 node caps 2 yes
+ inv-nodes yes tumor-size 15-17 node caps 3 no
+ inv-nodes yes tumor-size 6-8 Menopause 10-14 yes
+ inv-nodes yes tumor-size 6-8 Menopause 15-19 yes
+ inv-nodes yes tumor-size 6-8 Menopause 25-29 yes
+ inv-nodes yes tumor-size 6-8 Menopause 35-39 no
+ inv-nodes yes tumor-size 6-8 Menopause 40-44 yes
+ inv-nodes yes tumor-size 6-8 Menopause 45-49 no
+ inv-nodes yes tumor-size 9-11 NO_NAME no-recurrence-events yes
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 1 no
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 3 no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME central no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME left_low no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME right_low no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME right_up no
+ inv-nodes no tumor-size 0-2 Menopause 20-24 node caps 1 no
+ inv-nodes no tumor-size 0-2 Menopause 20-24 node caps 2 no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 30-39 no
+ inv-nodes no tumor-size 0-2 Menopause 40-44 Class 40-49 no
+ inv-nodes no tumor-size 0-2 Menopause 40-44 Class 50-59 no
+ inv-nodes no tumor-size 0-2 Menopause 40-44 Class 60-69 no
+ inv-nodes no tumor-size 0-2 Menopause 40-44 Class 70-79 no
+ inv-nodes no tumor-size 0-2 Menopause 5-9 NO_NAME central no
+ inv-nodes no tumor-size 0-2 Menopause 5-9 NO_NAME left_low yes
+ inv-nodes no tumor-size 0-2 Menopause 5-9 NO_NAME right_low no
+ inv-nodes no tumor-size 0-2 Menopause 5-9 NO_NAME right_up no
+ inv-nodes no tumor-size 0-2 Menopause 50-54 deg-malig left no
+ inv-nodes no tumor-size 3-5 Menopause 20-24 Age ge40 yes
+ inv-nodes no tumor-size 3-5 Menopause 20-24 Age premeno no
+ inv-nodes no tumor-size 3-5 Menopause 25-29 NO_NAME left_up yes
+ inv-nodes no tumor-size 3-5 Menopause 25-29 NO_NAME right_up no
+ inv-nodes no tumor-size 3-5 Menopause 30-34 Class 30-39 yes
+ inv-nodes no tumor-size 3-5 Menopause 30-34 Class 40-49 no
+ inv-nodes no tumor-size 3-5 Menopause 30-34 Class 50-59 no
+ inv-nodes yes tumor-size 0-2 Menopause 15-19 NO_NAME central yes
+ inv-nodes yes tumor-size 0-2 Menopause 15-19 NO_NAME left_up no
+ inv-nodes yes tumor-size 0-2 Menopause 30-34 node caps 2 yes
+ inv-nodes yes tumor-size 0-2 Menopause 30-34 node caps 3 no
+ inv-nodes yes tumor-size 3-5 Age ge40 NO_NAME central yes
+ inv-nodes yes tumor-size 3-5 Age ge40 NO_NAME left_low no
+ inv-nodes yes tumor-size 3-5 Age ge40 NO_NAME left_up no
+ inv-nodes yes tumor-size 3-5 Age ge40 NO_NAME right_up no
+ inv-nodes yes tumor-size 3-5 Age premeno node caps 3 yes
+ inv-nodes yes tumor-size 6-8 Menopause 30-34 deg-malig right no
+ inv-nodes yes tumor-size 9-11 NO_NAME recurrence-events Age ge40 yes
+ inv-nodes yes tumor-size 9-11 NO_NAME recurrence-events Age premeno no
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 2 Class 30-39 no
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 2 Class 50-59 no
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 2 Class 70-79 no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME left_up Age lt40 no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME left_up Age premeno no
+ inv-nodes no tumor-size 0-2 Menopause 20-24 node caps 3 Age ge40 no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age ge40 no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 50-59 NO_NAME no-recurrence-events no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 60-69 NO_NAME left_low no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 60-69 NO_NAME left_up no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 60-69 NO_NAME right_low yes
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME no-recurrence-events node caps 1 no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME no-recurrence-events node caps 3 no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME recurrence-events NO_NAME ? no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME recurrence-events NO_NAME central no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME recurrence-events NO_NAME left_low yes
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME recurrence-events NO_NAME right_up no
+ inv-nodes no tumor-size 0-2 Menopause 40-44 Class 30-39 NO_NAME left_low yes
+ inv-nodes no tumor-size 0-2 Menopause 40-44 Class 30-39 NO_NAME left_up no
+ inv-nodes no tumor-size 0-2 Menopause 40-44 Class 30-39 NO_NAME right_up no
+ inv-nodes no tumor-size 0-2 Menopause 50-54 deg-malig right node caps 1 no
+ inv-nodes no tumor-size 0-2 Menopause 50-54 deg-malig right node caps 2 yes
+ inv-nodes no tumor-size 0-2 Menopause 50-54 deg-malig right node caps 3 no
+ inv-nodes yes tumor-size 3-5 Age premeno node caps 2 Menopause 25-29 yes
+ inv-nodes yes tumor-size 6-8 Menopause 30-34 deg-malig left NO_NAME left_low no
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 2 Class 40-49 NO_NAME left_up no
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 2 Class 60-69 NO_NAME left_low no
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 2 Class 60-69 NO_NAME left_up yes
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME left_up Age ge40 deg-malig left yes
+ inv-nodes no tumor-size 0-2 Menopause 20-24 node caps 3 Age premeno NO_NAME central no
+ inv-nodes no tumor-size 0-2 Menopause 20-24 node caps 3 Age premeno NO_NAME left_low yes
+ inv-nodes no tumor-size 0-2 Menopause 20-24 node caps 3 Age premeno NO_NAME left_up yes
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME central no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME right_low no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME right_up no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 50-59 NO_NAME recurrence-events NO_NAME left_low yes
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 50-59 NO_NAME recurrence-events NO_NAME left_up no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 50-59 NO_NAME recurrence-events NO_NAME right_up no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME no-recurrence-events node caps 2 NO_NAME right_low no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME no-recurrence-events node caps 2 NO_NAME right_up yes
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME recurrence-events NO_NAME left_up node caps 1 no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME recurrence-events NO_NAME left_up node caps 2 no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME recurrence-events NO_NAME left_up node caps 3 yes
+ inv-nodes yes tumor-size 3-5 Age premeno node caps 2 Menopause 20-24 deg-malig right yes
+ inv-nodes yes tumor-size 3-5 Age premeno node caps 2 Menopause 30-34 Class 40-49 no
+ inv-nodes yes tumor-size 3-5 Age premeno node caps 2 Menopause 30-34 Class 50-59 yes
+ inv-nodes yes tumor-size 6-8 Menopause 30-34 deg-malig left NO_NAME right_low node caps 2 yes
+ inv-nodes yes tumor-size 6-8 Menopause 30-34 deg-malig left NO_NAME right_low node caps 3 no
+ inv-nodes no tumor-size 0-2 Menopause 10-14 node caps 2 Class 40-49 NO_NAME left_low deg-malig right no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME left_up Age ge40 deg-malig right node caps 1 no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME left_up Age ge40 deg-malig right node caps 2 no
+ inv-nodes no tumor-size 0-2 Menopause 15-19 NO_NAME left_up Age ge40 deg-malig right node caps 3 yes
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME left_low deg-malig left yes
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME left_up NO_NAME recurrence-events no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME no-recurrence-events node caps 2 NO_NAME left_up Class 30-39 no
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME no-recurrence-events node caps 2 NO_NAME left_up Class 40-49 yes
+ inv-nodes no tumor-size 0-2 Menopause 30-34 NO_NAME no-recurrence-events node caps 2 NO_NAME left_up Class 60-69 no
+ inv-nodes yes tumor-size 3-5 Age premeno node caps 2 Menopause 20-24 deg-malig left Class 30-39 no
+ inv-nodes yes tumor-size 3-5 Age premeno node caps 2 Menopause 20-24 deg-malig left Class 40-49 yes
+ inv-nodes yes tumor-size 3-5 Age premeno node caps 2 Menopause 20-24 deg-malig left Class 50-59 no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME left_low deg-malig right node caps 1 yes
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME left_low deg-malig right node caps 2 no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME left_up NO_NAME no-recurrence-events node caps 3 yes
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME left_up NO_NAME no-recurrence-events node caps 2 deg-malig left no
+ inv-nodes no tumor-size 0-2 Menopause 25-29 Class 40-49 Age premeno NO_NAME left_up NO_NAME no-recurrence-events node caps 2 deg-malig right no
