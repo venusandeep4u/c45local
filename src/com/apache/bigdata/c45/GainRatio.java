@@ -3,16 +3,12 @@ package com.apache.bigdata.c45;
 import java.io.*;
 import java.util.*;
 import java.lang.Math;
-import org.apache.hadoop.fs.*;
-import org.apache.hadoop.conf.*;
-import org.apache.hadoop.io.*;
-import org.apache.hadoop.mapred.*;
-import org.apache.hadoop.util.*;
- class GainRatio
+
+class GainRatio
  {
 	   
 	 int linenumber=0;
-	  static String count[][]=new String[1000][4];
+	  static String count[][]=new String[1000][5];
 	  int currnode[]=new int[100];
 	  String majorityLabel=null;
 	  public String majorityLabel()
@@ -48,7 +44,6 @@ import org.apache.hadoop.util.*;
 			  					currnode[ind]=currnode[ind]+Integer.parseInt(count[i][3]);
 			  					covered[i]=1;
 			  				}
-			  			
 				  		}
 		  			i++;
 		  			if(i==linenumber)
@@ -67,13 +62,12 @@ import org.apache.hadoop.util.*;
 			  }
 			  if(j==linenumber)
 				  break;
-		  
 		  }
 		  entropy=entropy(currnode);
-		  
 		  return entropy;
-		  
 	  }
+	  
+	  //Calculation of entropy
 	  public double entropy(int c[])
 	  {
 		  double entropy=0;
@@ -100,80 +94,49 @@ import org.apache.hadoop.util.*;
 	  }
 	  
 	  
-	  
 	  public void getcount()
 	  { 
-	  AlgorithmC45 id=new AlgorithmC45();
+	  //AlgorithmC45 id=new AlgorithmC45();
 	  FileInputStream fstream;
 	  StringTokenizer itr;
-	/*try {
-		
-		//fstream = new FileInputStream("/home/mkv/workspace/AlgorithmC45/input/intermidiate.txt");
-		fstream = new FileInputStream(output/part-r-00000");
-			
+	try {
+		  fstream = new FileInputStream("output/part-r-00000");
 		  DataInputStream in = new DataInputStream(fstream);
 		  BufferedReader br = new BufferedReader(new InputStreamReader(in));
 		  String line;
 		  //Read File Line By Line
-		  StringTokenizer itr;
-		// System.out.println("READING FROM intermediate  "+id.current_index);
-		  
+		  //System.out.println("READING FROM intermediate  "+id.current_index);
 		  while ((line = br.readLine()) != null)   {
 			  itr= new StringTokenizer(line);
 			  count[linenumber][0]=itr.nextToken();
 			  count[linenumber][1]=itr.nextToken();
 			  count[linenumber][2]=itr.nextToken();
 			  count[linenumber][3]=itr.nextToken();
-			  int i=linenumber;
-			
+			 // count[linenumber][4]=itr.nextToken();
+			  //count[linenumber][5]=itr.nextToken();
+			  //count[linenumber][6]=itr.nextToken();
+			  //count[linenumber][7]=itr.nextToken();
+			//  count[linenumber][8]=itr.nextToken();
 			  linenumber++;
 		    }
 		  count[linenumber][0]=null;
 		  count[linenumber][1]=null;
 		  count[linenumber][2]=null;
 		  count[linenumber][3]=null;
+		  //count[linenumber][4]=null;
+		  //count[linenumber][5]=null;
+		  //count[linenumber][6]=null;
+		  //count[linenumber][7]=null;
+		//  count[linenumber][8]=null;
+		 
 		  in.close();
 		  
-	} */
-	  try{
-		  Path pt=new Path("hdfs://localhost:9000/output/part-r-00000");
-          FileSystem fs = FileSystem.get(new Configuration());
-          BufferedReader br=new BufferedReader(new InputStreamReader(fs.open(pt)));
-          String line;
-                   
-          while ((line = br.readLine()) != null)
-          
-          {
-
-        	  itr= new StringTokenizer(line);
-        	  System.out.println(line);
-			  count[linenumber][0]=itr.nextToken();
-			  
-			  count[linenumber][1]=itr.nextToken();
-			 
-			  count[linenumber][2]=itr.nextToken();
-			  
-			  count[linenumber][3]=itr.nextToken();
-			  int i=linenumber;
-			
-			  linenumber++;
-		    }
-		  count[linenumber][0]=null;
-		  count[linenumber][1]=null;
-		  count[linenumber][2]=null;
-		  count[linenumber][3]=null;
-		 br.close();
-		
-	  }
-	  
-	  catch (Exception e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	    	  
-	    	  //Close the input stream
-	}
-	  
-  }
+	      } 
+	     // TODO Auto-generated catch block
+	    catch (Exception e){
+		       e.printStackTrace();
+	     }
+ }
 	  
 	  
 	  
@@ -248,14 +211,12 @@ import org.apache.hadoop.util.*;
 				
 				 if(count[z][1].contentEquals(temp))
 				 {
-	           // System.out.println("Equals  COUNT  Index z "+z+"   "+count[z][1]+ "temp  "+temp);
-				 }
+					 //do nothing
+	          	 }
 				 else
-				 {
-					
+				 {  
 					 values=values+" "+count[z][1];
 					 temp=count[z][1];
-					 
 				 }
 			 }
 			else if(flag==1)
@@ -263,10 +224,7 @@ import org.apache.hadoop.util.*;
 			}
 			else
 				break;
-			 }
+			}
 			 return values;
-			 
 		 }
-	  
 }
-	  
